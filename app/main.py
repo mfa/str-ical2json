@@ -37,4 +37,4 @@ def ical2json(street: str | None = None, streetnr: str | None = None):
     )
     if r.status_code == 200:
         return list(sorted(parse(r.text), key=lambda x: x["date"]))
-    return HTTPException(status_code=400, detail="Invalid street or street number.")
+    raise HTTPException(status_code=400, detail="Invalid street or street number.")
