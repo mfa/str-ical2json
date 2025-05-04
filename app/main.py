@@ -23,20 +23,18 @@ def parse(stream):
             ds["summary"] = line.split(":")[-1].strip()
 
 
+@app.get("/")
 @app.post("/")
-def ical2json(street: str, streetnr: str):
+def ical2json(street: str | None = None, streetnr: str | None = None):
+    if not street or not streetnr:
+        return {"message": "nothing to see"}
+
     # valid example:
-    # https://service.stuttgart.de/lhs-services/aws/api/ical?street=Katzenbachstr.&streetnr=42
+    # /?street=Rathausplatz&streetnr=1
     r = httpx.get(
         url="https://service.stuttgart.de/lhs-services/aws/api/ical",
-        params={"street": street,
-                "streetnr": streetnr}
+        params={"street": street, "streetnr": streetnr},
     )
     if r.status_code == 200:
         return list(sorted(parse(r.text), key=lambda x: x["date"]))
     return HTTPException(status_code=400, detail="Invalid street or street number.")
-
-
-@app.get("/")
-def index():
-    return {"message": "nothing to see"}
