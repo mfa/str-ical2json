@@ -1,9 +1,12 @@
 import datetime
 
 import httpx
-from fastapi import FastAPI, HTTPException
+from fastmcp import FastMCP
 
-app = FastAPI()
+mcp = FastMCP(
+    name="ical2json Stuttgart",
+    instructions="This server provides the next waste retrieval dates for the city of Stuttgart as json.",
+)
 
 
 def parse(stream):
@@ -23,18 +26,27 @@ def parse(stream):
             ds["summary"] = line.split(":")[-1].strip()
 
 
-@app.get("/")
-@app.post("/")
-def ical2json(street: str | None = None, streetnr: str | None = None):
-    if not street or not streetnr:
-        return {"message": "nothing to see"}
-
+@mcp.tool(
+    name="stuttgart_ical2json",
+    description="Stuttgart waste dates",
+    annotations={"readOnlyHint": True, "openWorldHint": False},
+)
+async def ical2json(street: str, streetnr: str):
     # valid example:
-    # /?street=Rathausplatz&streetnr=1
-    r = httpx.get(
-        url="https://service.stuttgart.de/lhs-services/aws/api/ical",
-        params={"street": street, "streetnr": streetnr},
+    # street=Rathausplatz
+    # streetnr=1
+    async with httpx.AsyncClient() as client:
+        r = await client.get(
+            url="https://service.stuttgart.de/lhs-services/aws/api/ical",
+            params={"street": street, "streetnr": streetnr},
+        )
+        if r.status_code == 200:
+            return list(sorted(parse(r.text), key=lambda x: x["date"]))
+    raise ValueError("Invalid street or street number.")
+
+
+if __name__ == "__main__":
+    mcp.run(
+        transport="sse",
+        host="0.0.0.0",
     )
-    if r.status_code == 200:
-        return list(sorted(parse(r.text), key=lambda x: x["date"]))
-    raise HTTPException(status_code=400, detail="Invalid street or street number.")

@@ -9,5 +9,5 @@ https://str-ical2json.fly.dev/
 ### development
 
 ```
-uv run fastapi dev app/main.py
+uv run python app/main.py
 ```

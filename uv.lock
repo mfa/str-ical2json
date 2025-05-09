@@ -55,68 +55,31 @@ wheels = [
 ]
 
 [[package]]
-name = "dnspython"
-version = "2.7.0"
+name = "exceptiongroup"
+version = "1.2.2"
 source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/dnspython/2.7.0/dnspython-2.7.0.tar.gz", hash = "sha256:ce9c432eda0dc91cf618a5cedf1a4e142651196bbcd2c80e89ed5a907e5cfaf1" }
+sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/exceptiongroup/1.2.2/exceptiongroup-1.2.2.tar.gz", hash = "sha256:47c2edf7c6738fafb49fd34290706d1a1a2f4d1c6df275526b62cbb4aa5393cc" }
 wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/dnspython/2.7.0/dnspython-2.7.0-py3-none-any.whl", hash = "sha256:b4c34b7d10b51bcc3a5071e7b8dee77939f1e878477eeecc965e9835f63c6c86" },
+    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/exceptiongroup/1.2.2/exceptiongroup-1.2.2-py3-none-any.whl", hash = "sha256:3111b9d131c238bec2f8f516e123e14ba243563fb135d3fe885990585aa7795b" },
 ]
 
 [[package]]
-name = "email-validator"
-version = "2.2.0"
+name = "fastmcp"
+version = "2.3.0"
 source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
 dependencies = [
-    { name = "dnspython" },
-    { name = "idna" },
-]
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/email-validator/2.2.0/email_validator-2.2.0.tar.gz", hash = "sha256:cb690f344c617a714f22e66ae771445a1ceb46821152df8e165c5f9a364582b7" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/email-validator/2.2.0/email_validator-2.2.0-py3-none-any.whl", hash = "sha256:561977c2d73ce3611850a06fa56b414621e0c8faa9d66f2611407d87465da631" },
-]
-
-[[package]]
-name = "fastapi"
-version = "0.115.12"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-dependencies = [
-    { name = "pydantic" },
-    { name = "starlette" },
-    { name = "typing-extensions" },
-]
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/fastapi/0.115.12/fastapi-0.115.12.tar.gz", hash = "sha256:1e2c2a2646905f9e83d32f04a3f86aff4a286669c6c950ca95b5fd68c2602681" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/fastapi/0.115.12/fastapi-0.115.12-py3-none-any.whl", hash = "sha256:e94613d6c05e27be7ffebdd6ea5f388112e5e430c8f7d6494a9d1d88d43e814d" },
-]
-
-[package.optional-dependencies]
-standard = [
-    { name = "email-validator" },
-    { name = "fastapi-cli", extra = ["standard"] },
+    { name = "exceptiongroup" },
     { name = "httpx" },
-    { name = "jinja2" },
-    { name = "python-multipart" },
-    { name = "uvicorn", extra = ["standard"] },
-]
-
-[[package]]
-name = "fastapi-cli"
-version = "0.0.7"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-dependencies = [
-    { name = "rich-toolkit" },
+    { name = "mcp" },
+    { name = "openapi-pydantic" },
+    { name = "python-dotenv" },
+    { name = "rich" },
     { name = "typer" },
-    { name = "uvicorn", extra = ["standard"] },
+    { name = "websockets" },
 ]
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/fastapi-cli/0.0.7/fastapi_cli-0.0.7.tar.gz", hash = "sha256:02b3b65956f526412515907a0793c9094abd4bfb5457b389f645b0ea6ba3605e" }
+sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/fastmcp/2.3.0/fastmcp-2.3.0.tar.gz", hash = "sha256:28c8799d1c28c2d10cca91dd2076c33ee459b69484e2e39d34de11f9a88b628f" }
 wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/fastapi-cli/0.0.7/fastapi_cli-0.0.7-py3-none-any.whl", hash = "sha256:d549368ff584b2804336c61f192d86ddea080c11255f375959627911944804f4" },
-]
-
-[package.optional-dependencies]
-standard = [
-    { name = "uvicorn", extra = ["standard"] },
+    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/fastmcp/2.3.0/fastmcp-2.3.0-py3-none-any.whl", hash = "sha256:1634e88111adadd790e1d39a5f83248ef814643ac5643f9ad0a1986884e2bdad" },
 ]
 
 [[package]]
@@ -142,21 +105,6 @@ wheels = [
 ]
 
 [[package]]
-name = "httptools"
-version = "0.6.4"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4.tar.gz", hash = "sha256:4e93eee4add6493b59a5c514da98c939b244fce4a0d8879cd3f466562f4b7d5c" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:ade273d7e767d5fae13fa637f4d53b6e961fb7fd93c7797562663f0171c26660" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:856f4bc0478ae143bad54a4242fccb1f3f86a6e1be5548fecfd4102061b3a083" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:322d20ea9cdd1fa98bd6a74b77e2ec5b818abdc3d36695ab402a0de8ef2865a3" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4d87b29bd4486c0093fc64dea80231f7c7f7eb4dc70ae394d70a495ab8436071" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:342dd6946aa6bda4b8f18c734576106b8a31f2fe31492881a9a160ec84ff4bd5" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:4b36913ba52008249223042dca46e69967985fb4051951f94357ea681e1f5dc0" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httptools/0.6.4/httptools-0.6.4-cp313-cp313-win_amd64.whl", hash = "sha256:28908df1b9bb8187393d5b5db91435ccc9c8e891657f9cbb42a2541b44c82fc8" },
-]
-
-[[package]]
 name = "httpx"
 version = "0.28.1"
 source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
@@ -172,17 +120,26 @@ wheels = [
 ]
 
 [[package]]
+name = "httpx-sse"
+version = "0.4.0"
+source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
+sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httpx-sse/0.4.0/httpx-sse-0.4.0.tar.gz", hash = "sha256:1e81a3a3070ce322add1d3529ed42eb5f70817f45ed6ec915ab753f961139721" }
+wheels = [
+    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/httpx-sse/0.4.0/httpx_sse-0.4.0-py3-none-any.whl", hash = "sha256:f329af6eae57eaa2bdfd962b42524764af68075ea87370a2de920af5341e318f" },
+]
+
+[[package]]
 name = "ical2json"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "fastapi", extra = ["standard"] },
+    { name = "fastmcp" },
     { name = "httpx" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "fastapi", extras = ["standard"], specifier = ">=0.115.12" },
+    { name = "fastmcp" },
     { name = "httpx", specifier = ">=0.28.1" },
 ]
 
@@ -193,18 +150,6 @@ source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.e
 sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/idna/3.10/idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9" }
 wheels = [
     { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/idna/3.10/idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3" },
-]
-
-[[package]]
-name = "jinja2"
-version = "3.1.6"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-dependencies = [
-    { name = "markupsafe" },
-]
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/jinja2/3.1.6/jinja2-3.1.6.tar.gz", hash = "sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/jinja2/3.1.6/jinja2-3.1.6-py3-none-any.whl", hash = "sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67" },
 ]
 
 [[package]]
@@ -220,31 +165,23 @@ wheels = [
 ]
 
 [[package]]
-name = "markupsafe"
-version = "3.0.2"
+name = "mcp"
+version = "1.8.0"
 source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/markupsafe-3.0.2.tar.gz", hash = "sha256:ee55d3edf80167e48ea11a923c7386f4669df67d7994554387f84e7d8b0a2bf0" }
+dependencies = [
+    { name = "anyio" },
+    { name = "httpx" },
+    { name = "httpx-sse" },
+    { name = "pydantic" },
+    { name = "pydantic-settings" },
+    { name = "python-multipart" },
+    { name = "sse-starlette" },
+    { name = "starlette" },
+    { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
+]
+sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/mcp/1.8.0/mcp-1.8.0.tar.gz", hash = "sha256:263dfb700540b726c093f0c3e043f66aded0730d0b51f04eb0a3eb90055fe49b" }
 wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:ba9527cdd4c926ed0760bc301f6728ef34d841f405abf9d4f959c478421e4efd" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:f8b3d067f2e40fe93e1ccdd6b2e1d16c43140e76f02fb1319a05cf2b79d99430" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:569511d3b58c8791ab4c2e1285575265991e6d8f8700c7be0e88f86cb0672094" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:15ab75ef81add55874e7ab7055e9c397312385bd9ced94920f2802310c930396" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:f3818cb119498c0678015754eba762e0d61e5b52d34c8b13d770f0719f7b1d79" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:cdb82a876c47801bb54a690c5ae105a46b392ac6099881cdfb9f6e95e4014c6a" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:cabc348d87e913db6ab4aa100f01b08f481097838bdddf7c7a84b7575b7309ca" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:444dcda765c8a838eaae23112db52f1efaf750daddb2d9ca300bcae1039adc5c" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-win32.whl", hash = "sha256:bcf3e58998965654fdaff38e58584d8937aa3096ab5354d493c77d1fdd66d7a1" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313-win_amd64.whl", hash = "sha256:e6a2a455bd412959b57a172ce6328d2dd1f01cb2135efda2e4576e8a23fa3b0f" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:b5a6b3ada725cea8a5e634536b1b01c30bcdcd7f9c6fff4151548d5bf6b3a36c" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:a904af0a6162c73e3edcb969eeeb53a63ceeb5d8cf642fade7d39e7963a22ddb" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4aa4e5faecf353ed117801a068ebab7b7e09ffb6e1d5e412dc852e0da018126c" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c0ef13eaeee5b615fb07c9a7dadb38eac06a0608b41570d8ade51c56539e509d" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:d16a81a06776313e817c951135cf7340a3e91e8c1ff2fac444cfd75fffa04afe" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:6381026f158fdb7c72a168278597a5e3a5222e83ea18f543112b2662a9b699c5" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:3d79d162e7be8f996986c064d1c7c817f6df3a77fe3d6859f6f9e7be4b8c213a" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:131a3c7689c85f5ad20f9f6fb1b866f402c445b220c19fe4308c0b147ccd2ad9" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-win32.whl", hash = "sha256:ba8062ed2cf21c07a9e295d5b8a2a5ce678b913b45fdf68c32d95d6c1291e0b6" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/markupsafe/3.0.2/MarkupSafe-3.0.2-cp313-cp313t-win_amd64.whl", hash = "sha256:e444a31f8db13eb18ada366ab3cf45fd4b31e4db1236a4448f68778c1d1a5a2f" },
+    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/mcp/1.8.0/mcp-1.8.0-py3-none-any.whl", hash = "sha256:889d9d3b4f12b7da59e7a3933a0acadae1fce498bfcd220defb590aa291a1334" },
 ]
 
 [[package]]
@@ -254,6 +191,18 @@ source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.e
 sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/mdurl/0.1.2/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba" }
 wheels = [
     { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/mdurl/0.1.2/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8" },
+]
+
+[[package]]
+name = "openapi-pydantic"
+version = "0.5.1"
+source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
+dependencies = [
+    { name = "pydantic" },
+]
+sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/openapi-pydantic/0.5.1/openapi_pydantic-0.5.1.tar.gz", hash = "sha256:ff6835af6bde7a459fb93eb93bb92b8749b754fc6e51b2f1590a19dc3005ee0d" }
+wheels = [
+    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/openapi-pydantic/0.5.1/openapi_pydantic-0.5.1-py3-none-any.whl", hash = "sha256:a3a09ef4586f5bd760a8df7f43028b60cafb6d9f61de2acba9574766255ab146" },
 ]
 
 [[package]]
@@ -300,6 +249,20 @@ wheels = [
 ]
 
 [[package]]
+name = "pydantic-settings"
+version = "2.9.1"
+source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
+dependencies = [
+    { name = "pydantic" },
+    { name = "python-dotenv" },
+    { name = "typing-inspection" },
+]
+sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pydantic-settings/2.9.1/pydantic_settings-2.9.1.tar.gz", hash = "sha256:c509bf79d27563add44e8446233359004ed85066cd096d8b510f715e6ef5d268" }
+wheels = [
+    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pydantic-settings/2.9.1/pydantic_settings-2.9.1-py3-none-any.whl", hash = "sha256:59b4f431b1defb26fe620c71a7d3968a710d719f5f4cdbbdb7926edeb770f6ef" },
+]
+
+[[package]]
 name = "pygments"
 version = "2.19.1"
 source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
@@ -327,23 +290,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pyyaml"
-version = "6.0.2"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/pyyaml-6.0.2.tar.gz", hash = "sha256:d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:efdca5630322a10774e8e98e1af481aad470dd62c3170801852d752aa7a783ba" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:50187695423ffe49e2deacb8cd10510bc361faac997de9efef88badc3bb9e2d1" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0ffe8360bab4910ef1b9e87fb812d8bc0a308b0d0eef8c8f44e0254ab3b07133" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:17e311b6c678207928d649faa7cb0d7b4c26a0ba73d41e99c4fff6b6c3276484" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:70b189594dbe54f75ab3a1acec5f1e3faa7e8cf2f1e08d9b561cb41b845f69d5" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-musllinux_1_1_aarch64.whl", hash = "sha256:41e4e3953a79407c794916fa277a82531dd93aad34e29c2a514c2c0c5fe971cc" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-musllinux_1_1_x86_64.whl", hash = "sha256:68ccc6023a3400877818152ad9a1033e3db8625d899c72eacb5a668902e4d652" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-win32.whl", hash = "sha256:bc2fa7c6b47d6bc618dd7fb02ef6fdedb1090ec036abab80d4681424b84c1183" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/pyyaml/6.0.2/PyYAML-6.0.2-cp313-cp313-win_amd64.whl", hash = "sha256:8388ee1976c416731879ac16da0aff3f63b286ffdd57cdeb95f3f2e085687563" },
-]
-
-[[package]]
 name = "rich"
 version = "14.0.0"
 source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
@@ -354,20 +300,6 @@ dependencies = [
 sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/rich/14.0.0/rich-14.0.0.tar.gz", hash = "sha256:82f1bc23a6a21ebca4ae0c45af9bdbc492ed20231dcb63f297d6d1021a9d5725" }
 wheels = [
     { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/rich/14.0.0/rich-14.0.0-py3-none-any.whl", hash = "sha256:1c9491e1951aac09caffd42f448ee3d04e58923ffe14993f6e83068dc395d7e0" },
-]
-
-[[package]]
-name = "rich-toolkit"
-version = "0.14.4"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-dependencies = [
-    { name = "click" },
-    { name = "rich" },
-    { name = "typing-extensions" },
-]
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/rich-toolkit/0.14.4/rich_toolkit-0.14.4.tar.gz", hash = "sha256:db256cf45165cae381c9bbf3b48a0fd4d99a07c80155cc655c80212a62e28fe1" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/rich-toolkit/0.14.4/rich_toolkit-0.14.4-py3-none-any.whl", hash = "sha256:cc71ebee83eaa122d8e42882408bc5a4bf0240bbf1e368811ee56d249b3d742a" },
 ]
 
 [[package]]
@@ -386,6 +318,19 @@ source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.e
 sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/sniffio/1.3.1/sniffio-1.3.1.tar.gz", hash = "sha256:f4324edc670a0f49750a81b895f35c3adb843cca46f0530f79fc1babb23789dc" }
 wheels = [
     { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/sniffio/1.3.1/sniffio-1.3.1-py3-none-any.whl", hash = "sha256:2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2" },
+]
+
+[[package]]
+name = "sse-starlette"
+version = "2.3.4"
+source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
+dependencies = [
+    { name = "anyio" },
+    { name = "starlette" },
+]
+sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/sse-starlette/2.3.4/sse_starlette-2.3.4.tar.gz", hash = "sha256:0ffd6bed217cdbb74a84816437c609278003998b4991cd2e6872d0b35130e4d5" }
+wheels = [
+    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/sse-starlette/2.3.4/sse_starlette-2.3.4-py3-none-any.whl", hash = "sha256:b8100694f3f892b133d0f7483acb7aacfcf6ed60f863b31947664b6dc74e529f" },
 ]
 
 [[package]]
@@ -447,54 +392,6 @@ dependencies = [
 sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvicorn/0.34.2/uvicorn-0.34.2.tar.gz", hash = "sha256:0e929828f6186353a80b58ea719861d2629d766293b6d19baf086ba31d4f3328" }
 wheels = [
     { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvicorn/0.34.2/uvicorn-0.34.2-py3-none-any.whl", hash = "sha256:deb49af569084536d269fe0a6d67e3754f104cf03aba7c11c40f01aadf33c403" },
-]
-
-[package.optional-dependencies]
-standard = [
-    { name = "colorama", marker = "sys_platform == 'win32'" },
-    { name = "httptools" },
-    { name = "python-dotenv" },
-    { name = "pyyaml" },
-    { name = "uvloop", marker = "platform_python_implementation != 'PyPy' and sys_platform != 'cygwin' and sys_platform != 'win32'" },
-    { name = "watchfiles" },
-    { name = "websockets" },
-]
-
-[[package]]
-name = "uvloop"
-version = "0.21.0"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvloop/0.21.0/uvloop-0.21.0.tar.gz", hash = "sha256:3bf12b0fda68447806a7ad847bfa591613177275d35b6724b1ee573faa3704e3" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvloop/0.21.0/uvloop-0.21.0-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:bfd55dfcc2a512316e65f16e503e9e450cab148ef11df4e4e679b5e8253a5281" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvloop/0.21.0/uvloop-0.21.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:787ae31ad8a2856fc4e7c095341cccc7209bd657d0e71ad0dc2ea83c4a6fa8af" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvloop/0.21.0/uvloop-0.21.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:5ee4d4ef48036ff6e5cfffb09dd192c7a5027153948d85b8da7ff705065bacc6" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvloop/0.21.0/uvloop-0.21.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f3df876acd7ec037a3d005b3ab85a7e4110422e4d9c1571d4fc89b0fc41b6816" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvloop/0.21.0/uvloop-0.21.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:bd53ecc9a0f3d87ab847503c2e1552b690362e005ab54e8a48ba97da3924c0dc" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/uvloop/0.21.0/uvloop-0.21.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:a5c39f217ab3c663dc699c04cbd50c13813e31d917642d459fdcec07555cc553" },
-]
-
-[[package]]
-name = "watchfiles"
-version = "1.0.5"
-source = { registry = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/" }
-dependencies = [
-    { name = "anyio" },
-]
-sdist = { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5.tar.gz", hash = "sha256:b7529b5dcc114679d43827d8c35a07c493ad6f083633d573d81c660abc5979e9" }
-wheels = [
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-macosx_10_12_x86_64.whl", hash = "sha256:0b289572c33a0deae62daa57e44a25b99b783e5f7aed81b314232b3d3c81a11d" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:a056c2f692d65bf1e99c41045e3bdcaea3cb9e6b5a53dcaf60a5f3bd95fc9763" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b9dca99744991fc9850d18015c4f0438865414e50069670f5f7eee08340d8b40" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:894342d61d355446d02cd3988a7326af344143eb33a2fd5d38482a92072d9563" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:ab44e1580924d1ffd7b3938e02716d5ad190441965138b4aa1d1f31ea0877f04" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:d6f9367b132078b2ceb8d066ff6c93a970a18c3029cea37bfd7b2d3dd2e5db8f" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:f2e55a9b162e06e3f862fb61e399fe9f05d908d019d87bf5b496a04ef18a970a" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0125f91f70e0732a9f8ee01e49515c35d38ba48db507a50c5bdcad9503af5827" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-musllinux_1_1_aarch64.whl", hash = "sha256:13bb21f8ba3248386337c9fa51c528868e6c34a707f729ab041c846d52a0c69a" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-musllinux_1_1_x86_64.whl", hash = "sha256:839ebd0df4a18c5b3c1b890145b5a3f5f64063c2a0d02b13c76d78fe5de34936" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-win32.whl", hash = "sha256:4a8ec1e4e16e2d5bafc9ba82f7aaecfeec990ca7cd27e84fb6f191804ed2fcfc" },
-    { url = "https://python-paka-indekso-078810848840.d.codeartifact.eu-west-1.amazonaws.com/pypi/python-paka-indekso/simple/watchfiles/1.0.5/watchfiles-1.0.5-cp313-cp313-win_amd64.whl", hash = "sha256:f436601594f15bf406518af922a89dcaab416568edb6f65c4e5bbbad1ea45c11" },
 ]
 
 [[package]]
