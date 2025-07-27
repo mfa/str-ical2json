@@ -47,6 +47,6 @@ async def ical2json(street: str, streetnr: str):
 
 if __name__ == "__main__":
     mcp.run(
-        transport="sse",
+        transport="http",
         host="0.0.0.0",
     )
